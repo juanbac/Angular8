@@ -1,3 +1,4 @@
+import { OrderItem } from './order-item.model';
 import { Injectable } from '@angular/core';
 import { Order } from './order.model';
 
@@ -6,5 +7,6 @@ import { Order } from './order.model';
 })
 export class OrderService {
   formData: Order;
+  orderItems: OrderItem [];
   constructor() { }
 }
